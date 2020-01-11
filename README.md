@@ -10,7 +10,9 @@ API desenvolvida utilizando Java / Maven / Spring Boot (version 2.2.2) / MongoDB
 # 3 Passos para rodar o projeto
 
 1 - Rodar arquivo docker-compose.yml na raiz do projeto. (Ex: docker-compose up -d)
+
 2 - Baixar as dependências do projeto com o Maven.
+
 3 - Startar o projeto da IDE.
 
 # Documentação
