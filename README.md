@@ -51,6 +51,8 @@ Content-Type: application/json
 {
    "name": "Maceió" 
 }
+
+RESPONSE: HTTP 201 (Created)
 ```
 
 ```
@@ -62,6 +64,8 @@ Content-Type: application/json
    "id": "5e179a597f80820d649600ec",
    "name": "Maceió" 
 }
+
+RESPONSE: HTTP 200 (OK)
 ```
 
 ```
@@ -71,6 +75,8 @@ GET - localhost:8080/api/city/{id} ex: "5e179a597f80820d649600ec"
    "id": "5e179a597f80820d649600ec",
    "name": "Maceió" 
 }
+
+RESPONSE: HTTP 200 (OK)
 ```
 
 ```
@@ -86,6 +92,8 @@ GET - localhost:8080/api/city/all
         "name": "Recife"
     }
 ]
+
+RESPONSE: HTTP 200 (OK)
 ```
 
 ## Company
@@ -98,6 +106,8 @@ Content-Type: application/json
 {
    "name": "Lojas Americanas" 
 }
+
+RESPONSE: HTTP 201 (Created)
 ```
 
 ```
@@ -109,6 +119,8 @@ Content-Type: application/json
    "id": "5e179a597f80820d649600ec",
    "name": "Maceió" 
 }
+
+RESPONSE: HTTP 200 (OK)
 ```
 
 ```
@@ -118,6 +130,8 @@ GET - localhost:8080/api/city/{id} ex: "5e178f1721fa515a918d69e9"
    "id": "5e178f1721fa515a918d69e9",
    "name": "Lojas Americanas" 
 }
+
+RESPONSE: HTTP 200 (OK)
 ```
 
 ```
@@ -133,6 +147,8 @@ GET - localhost:8080/api/company/all
         "name": "Wallmart"
     }
 ]
+
+RESPONSE: HTTP 200 (OK)
 ```
 
 ## Complaint
@@ -154,4 +170,6 @@ Content-Type: application/json
         "name": "Lojas Americanas"
     }
 }
+
+RESPONSE: HTTP 201 (Created)
 ```
