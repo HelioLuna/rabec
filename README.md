@@ -7,7 +7,7 @@ API desenvolvida utilizando Java / Maven / Spring Boot (version 2.2.2) / MongoDB
 - Docker (https://www.docker.com/)
 - Lombok instalado na IDE (IntelliJ IDEA Ex: https://dicasdejava.com.br/como-configurar-o-lombok-no-intellij-idea/)
 
-# 3 Passos para rodar o projeto
+# - 3 Passos para rodar o projeto
 
 1 - Rodar arquivo docker-compose.yml na raiz do projeto. (Ex: docker-compose up -d)
 
