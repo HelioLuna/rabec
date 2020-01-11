@@ -41,6 +41,8 @@ localhost:8080/api/complaint/all
 localhost:8080/api/complaint/city/{idCity}/company/{idCompany}
 ```
 
+# Exemplos 
+
 ## City
 
 ```
