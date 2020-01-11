@@ -159,8 +159,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "id": "5e195dc0dc99e03dbb08d678",
-    "description": "QUEIXA ihuuuuuu",
+    "description": "MEU PRODUTO NÃO CHEGOU",
     "locale": {
         "id": "5e179a597f80820d649600ec",
         "name": "Maceió"
@@ -172,4 +171,100 @@ Content-Type: application/json
 }
 
 RESPONSE: HTTP 201 (Created)
+```
+
+```
+PUT - localhost:8080/api/complaint
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": "5e195dc0dc99e03dbb08d678",
+    "description": "MEU PRODUTO NÃO CHEGOU NA DATA X",
+    "locale": {
+        "id": "5e179a597f80820d649600ec",
+        "name": "Maceió"
+    },
+    "company": {
+        "id": "5e178f1721fa515a918d69e9",
+        "name": "Lojas Americanas"
+    }
+}
+
+RESPONSE: HTTP 200 (OK)
+```
+
+
+```
+GET - localhost:8080/api/complaint/{id} ex: "5e195dc0dc99e03dbb08d678"
+
+{
+    "id": "5e195dc0dc99e03dbb08d678",
+    "description": "MEU PRODUTO NÃO CHEGOU NA DATA X",
+    "locale": {
+        "id": "5e179a597f80820d649600ec",
+        "name": "Maceió"
+    },
+    "company": {
+        "id": "5e178f1721fa515a918d69e9",
+        "name": "Lojas Americanas"
+    }
+}
+
+RESPONSE: HTTP 200 (OK)
+```
+
+```
+GET - localhost:8080/api/complaint/all
+
+[
+    {
+        "id": "5e195dc0dc99e03dbb08d678",
+        "description": "MEU PRODUTO NÃO CHEGOU",
+        "locale": {
+            "id": "5e179a597f80820d649600ec",
+            "name": "Maceió"
+        },
+        "company": {
+            "id": "5e178f1721fa515a918d69e9",
+            "name": "Lojas Americanas"
+        }
+    },
+    {
+        "id": "5e195dc0dc99e03dbb08d679",
+        "description": "PRODUTO QUEBRADO",
+        "locale": {
+            "id": "5e179a597f80820d649600ec",
+            "name": "Maceió"
+        },
+        "company": {
+            "id": "5e178f1721fa515a918d69e9",
+            "name": "Wallmart"
+        }
+    }
+]
+
+RESPONSE: HTTP 200 (OK)
+```
+
+
+```
+GET - localhost:8080/api/complaint/city/{idCity}/company/{idCompany} ex: city - 5e179a597f80820d649600ec , company - 5e178f1721fa515a918d69e9 (Maceió, Lojas Americanas)
+
+[
+    {
+        "id": "5e195dc0dc99e03dbb08d678",
+        "description": "MEU PRODUTO NÃO CHEGOU",
+        "locale": {
+            "id": "5e179a597f80820d649600ec",
+            "name": "Maceió"
+        },
+        "company": {
+            "id": "5e178f1721fa515a918d69e9",
+            "name": "Lojas Americanas"
+        }
+    }
+]
+
+RESPONSE: HTTP 200 (OK)
 ```
