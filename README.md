@@ -23,7 +23,7 @@ City
 ```
 localhost:8080/api/city
 localhost:8080/api/city/{id}
-localhost:8080/api/ccityy/all
+localhost:8080/api/city/all
 ```
 
 Company 
@@ -119,7 +119,7 @@ Content-Type: application/json
 
 {
    "id": "5e179a597f80820d649600ec",
-   "name": "Maceió" 
+   "name": "Lojas Americanas" 
 }
 
 RESPONSE: HTTP 200 (OK)
